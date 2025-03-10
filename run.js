@@ -69,7 +69,7 @@ async function createDriver() {
   
   if (os.platform() === 'linux') {
     options.addArguments('--no-sandbox', '--disable-dev-shm-usage');
-    options.setChromeBinaryPath('/usr/bin/chromium-browser');
+    options.setChromeBinaryPath('/opt/chromium/chrome-linux/chrome');
   }
 
   const driver = await new Builder()
